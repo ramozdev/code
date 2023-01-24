@@ -48,7 +48,7 @@ export function UserInfo() {
         disabled={isSubmitting}
         {...register('email')}
       />
-      <div>{errors.email?.message}</div>
+      {errors.email?.message && <div>{errors.email?.message}</div>}
 
       <label htmlFor='name'>Name</label>
       <input
@@ -57,7 +57,7 @@ export function UserInfo() {
         disabled={isSubmitting}
         {...register('name')}
       />
-      <div>{errors.name?.message}</div>
+      {errors.name?.message && <div>{errors.name?.message}</div>}
 
       <label htmlFor='alias'>Alias</label>
       <input
@@ -66,7 +66,7 @@ export function UserInfo() {
         disabled={isSubmitting}
         {...register('alias')}
       />
-      <div>{errors.alias?.message}</div>
+      {errors.alias?.message && <div>{errors.alias?.message}</div>}
 
       <label htmlFor='dateOfBirth'>Date of Birth</label>
       <input
@@ -75,7 +75,7 @@ export function UserInfo() {
         disabled={isSubmitting}
         {...register('dateOfBirth')}
       />
-      <div>{errors.dateOfBirth?.message}</div>
+      {errors.dateOfBirth?.message && <div>{errors.dateOfBirth?.message}</div>}
 
       <label htmlFor='weight'>Weight</label>
       <input
@@ -84,7 +84,7 @@ export function UserInfo() {
         disabled={isSubmitting}
         {...register('weight')}
       />
-      <div>{errors.weight?.message}</div>
+      {errors.weight?.message && <div>{errors.weight?.message}</div>}
 
       <label htmlFor='maritalStatus'>Marital Status</label>
       <select
@@ -94,7 +94,9 @@ export function UserInfo() {
       >
         {maritalStatusOptions}
       </select>
-      <div>{errors.maritalStatus?.message}</div>
+      {errors.maritalStatus?.message && (
+        <div>{errors.maritalStatus?.message}</div>
+      )}
 
       <button type='submit' disabled={isSubmitting}>
         Submit
