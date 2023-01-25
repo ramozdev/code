@@ -102,6 +102,7 @@ export function UserInfo() {
         Submit
       </button>
 
+      {/* Only for development. Remove for production. */}
       <pre>{JSON.stringify(watch(), null, 2)}</pre>
     </form>
   )
