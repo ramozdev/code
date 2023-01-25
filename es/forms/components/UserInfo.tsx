@@ -102,7 +102,7 @@ export function UserInfo() {
         Enviar
       </button>
 
-      {/* Only for development. Remove for production. */}
+      {/* Solo para desarrollo. Remueve esta línea antes de enviar a producción. */}
       <pre>{JSON.stringify(watch(), null, 2)}</pre>
     </form>
   )

@@ -18,10 +18,13 @@ export const mappedMaritalStatuses: { [key in MaritalStatus]: string } = {
 
 export const userInfoSchema = z.object({
   email: z.string().email({ message: 'El correo electrónico es requerido.' }),
-  name: z.string().min(1, { message: 'El nombre es requerido.' }).max(100),
+  name: z
+    .string()
+    .min(1, { message: 'El nombre es requerido.' })
+    .max(100, { message: 'El nombre no puede tener más de 100 caracteres.' }),
   alias: z
     .string()
-    .max(100)
+    .max(100, { message: 'El alias no puede tener más de 100 caracteres.' })
     .transform((alias) => {
       if (alias === '') return null
       return alias
@@ -39,6 +42,6 @@ export const userInfoSchema = z.object({
     })
     .transform((weight) => Number(weight)),
   maritalStatus: z.enum(maritalStatuses, {
-    errorMap: () => ({ message: 'El estado civil es requerido' }),
+    errorMap: () => ({ message: 'El estado civil es requerido.' }),
   }),
 })

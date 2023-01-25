@@ -18,10 +18,13 @@ export const mappedMaritalStatuses: { [key in MaritalStatus]: string } = {
 
 export const userInfoSchema = z.object({
   email: z.string().email({ message: 'An email is required.' }),
-  name: z.string().min(1, { message: 'A first name is required.' }).max(100),
+  name: z
+    .string()
+    .min(1, { message: 'A name is required.' })
+    .max(100, { message: 'The name cannot be longer than 100 characters.' }),
   alias: z
     .string()
-    .max(100)
+    .max(100, { message: 'The alias cannot be longer than 100 characters.' })
     .transform((alias) => {
       if (alias === '') return null
       return alias
