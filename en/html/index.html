@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn About HTML - Pablo Pérez</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <header>
+        <h1>HTML</h1>
+        <time datetime="2023-03-03">03.03.2023</time>
+      </header>
+
+      <figure>
+        <figcaption>Listen to this blog post</figcaption>
+        <audio controls src="/media/html.mp3"></audio>
+      </figure>
+
+      <section>
+        <h2>What is HTML?</h2>
+
+        <p>
+          <dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> is the standard markup language for creating
+          web pages.
+          With
+          HTML you can create your own <a href="https://en.wikipedia.org/wiki/Website" target="_blank"
+            rel="noopener noreferrer">website</a>.
+        </p>
+
+        <p>
+          Lorem ipsum <em>dolor</em> sit amet consectetur adipisicing elit. Suscipit laudantium ipsa, nihil, ducimus
+          corrupti saepe aperiam error iusto, esse doloribus <strong><em>culpa non similique!</em></strong> Totam,
+          eveniet. Reprehenderit qui autem officia accusantium.
+        </p>
+      </section>
+
+      <aside>
+        <p>
+          <mark>You only need HTML to create a website</mark>, but nowadays, almost <span>no website</span> is created
+          using only HTML.
+        </p>
+      </aside>
+
+      <!-- Embed content (YouTube Video, Tweet, etc) -->
+      <embed src="https://www.youtube.com/embed/4gvSYEqOMn8" width="400" height="315" frameborder="0" allowfullscreen />
+
+      <section>
+        <h2>HTML Entities</h2>
+
+        <p>
+          An HTML <dfn id="def-entity">entity</dfn> is a reserved string of characters that can be used to represent
+          special characters in HTML.
+        </p>
+
+        <p>
+          Some common entities are: &apos; &amp; &lt; &gt; &quot; &copy; &reg; &nbsp;
+        </p>
+
+        <p>
+          Pro tip: You can create inline quotes using the <code>&lt;q&gt;</code> element. For example: <q>I just told
+            you who I
+            thought I was, a god! I just told you!</q>.
+        </p>
+      </section>
+
+
+      <!-- Images -->
+      <figure>
+        <img width="400" src="public/html.png" alt="HTML code" />
+        <figcaption><small>Screenshot of HTML code.</small></figcaption>
+      </figure>
+
+      <hr />
+
+      <!-- Interactive -->
+      <details>
+        <summary>Zoom</summary>
+        This page may look small in your screen. Use <kbd>Command</kbd> + <kbd>=</kbd> to zoom in and <kbd>Command</kbd>
+        + <kbd>-</kbd> to zoom out.
+      </details>
+
+      <div>
+        <p>Some of my favorite CLI commands are:</p>
+        <dl>
+          <dt><code>ls</code></dt>
+          <dd>List the files in the current directory.</dd>
+
+          <dt><code>cd</code></dt>
+          <dd>Change directories.</dd>
+
+          <dt><code>mkdir</code></dt>
+          <dd>Create a new directory.</dd>
+        </dl>
+      </div>
+
+      <video controls width="400">
+        <source src="public/media/vid.mp4" type="video/mp4">
+      </video>
+
+      <!-- Unordered Lists -->
+      <p>
+        Things to remember about HTML
+      <ul>
+        <li>HTML is a markup language, not a programming language</li>
+        <li>All websites use HTML</li>
+        <li>HTML is case-insensitive</li>
+      </ul>
+      </p>
+
+      <!-- Quotes -->
+      <figure>
+        <blockquote cite="https://navalmanack.s3.amazonaws.com/Eric-Jorgenson_The-Almanack-of-Naval-Ravikant_Final.pdf">
+          <p>Happines is peace in motion.</p>
+        </blockquote>
+        <figcaption>
+          —Naval Ravikant,
+          <cite>The Almanack of Naval Ravikant: A Guide to Wealth and Happiness</cite>
+        </figcaption>
+      </figure>
+
+      <!-- Preformatted text -->
+      <pre>
+        Roses are red
+          Violets are blue,
+        Sugar is sweet
+          And so are you.
+      </pre>
+
+      <!-- Scientific -->
+      <p>A famous equation: <var>e</var> = <var>m</var><var>c<sup>2</sup></var></p>
+
+      <p>And some water: <var>H<sub>2</sub>O</var></p>
+
+      <!-- Ordered Lists -->
+      <div>
+        <p>You will learn front-end in the following order of increasing difficulty:</p>
+        <ol>
+          <li><data value="0">HTML</data></li>
+          <li><data value="1">CSS</data></li>
+          <li><data value="2">JavaScript</data></li>
+          <li><data value="3">TypeScript</data></li>
+          <li><data value="4">React.js</data></li>
+          <li><data value="4">Next.js</data></li>
+        </ol>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    <menu>
+      <li><button>Print</button></li>
+      <li><button>Save as PDF</button></li>
+      <li><button>Share</button></li>
+    </menu>
+
+    <address>
+      Main website:
+      <a href="http://somedomain.com/contact"> somedomain.com</a><br>
+      Email me at:
+      <a href="mailto:lorem@ipsum.com"> lorem@ipsum.com</a><br><br>
+
+      Null Company<br>
+      232 Banana Ave<br>
+      Tropical Breeze, RY 94041<br>
+      Wonderland
+    </address>
+
+    <p>Ramoz&trade; 2024</p>
+  </footer>
+
+  <script>
+    console.log("Hello World!")
+  </script>
+
+</body>
+
+</html>

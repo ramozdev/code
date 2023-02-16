@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <form style="display: grid; gap: 20px">
+      <div>
+        <input type="checkbox" name="agree" id="agree" />
+        <label for="agree">I agree to the terms and conditions</label>
+      </div>
+
+      <label for="favColor">Favorite Color</label>
+      <input type="color" name="favColor" id="favColor" />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" id="dob" />
+
+      <label for="someEvent">When something happened</label>
+      <input type="datetime-local" name="someEvent" id="someEvent" />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+
+      <label for="file">File</label>
+      <input type="file" name="file" id="file" />
+
+      <!-- Warning: Any user can see this data using DevTools -->
+      <input
+        type="hidden"
+        name="hidden"
+        id="hidden"
+        value="tz4a98xxat96iws9zmbrgj3a"
+      />
+
+      <!-- Graphical submit button. Not recommended -->
+      <!-- <input type="image" /> -->
+
+      <label for="month">Month</label>
+      <input type="month" name="month" id="month" />
+
+      <label for="number">Number</label>
+      <input type="number" name="number" id="number" />
+
+      <label id="password">Password</label>
+      <input type="password" name="password" id="password" />
+
+      <fieldset>
+        <legend>Select your favorite drink:</legend>
+
+        <input type="radio" id="water" name="drink" value="water" checked />
+        <label for="water">Water</label>
+        <br />
+        <input type="radio" id="lemonade" name="drink" value="lemonade" />
+        <label for="lemonade">Lemonade</label>
+        <br />
+        <input type="radio" id="wine" name="drink" value="wine" />
+        <label for="wine">Wine</label>
+      </fieldset>
+
+      <label for="hungerLevel">How hungry are you?</label>
+      <input type="range" name="hungerLevel" id="hungerLevel" />
+
+      <!-- Reset all input fields in the form. Not recommended -->
+      <!-- <input type="reset" /> -->
+
+      <label for="search">Search</label>
+      <input type="search" name="search" id="search" />
+
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" name="phoneNumber" id="phoneNumber" />
+
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" />
+
+      <label for="time">Time</label>
+      <input type="time" name="time" id="time" />
+
+      <label for="url">URL</label>
+      <input type="url" name="url" id="url" />
+
+      <label for="week">Week</label>
+      <input type="week" name="week" id="week" />
+
+      <label for="bestColorEver">Choose the best color:</label>
+      <select name="bestColorEver" id="bestColorEver">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+      </select>
+
+      <label for="comment">Write a comment:</label>
+      <textarea id="comment" name="comment" rows="5" cols="33"></textarea>
+
+      <button type="submit">Submit</button>
+
+      <input type="submit" value="Save for later" />
+    </form>
+  </body>
+</html>
